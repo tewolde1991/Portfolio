@@ -1,4 +1,6 @@
-import './Navbar.css'
+import "./Navbar.css";
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
 function Navbar() {
   return (
     <nav className="navbar">
@@ -13,7 +15,16 @@ function Navbar() {
         <li>Contact</li>
       </ul>
 
-      <button className="btn">BUY NOW</button>
+      <div className="right">
+        <div className="icons">
+          <FaFacebookF />
+          <FaGithub />
+          <FaLinkedinIn />
+          <FaTwitter />
+        </div>
+
+        <button className="btn">BUY NOW</button>
+      </div>
     </nav>
   );
 }
